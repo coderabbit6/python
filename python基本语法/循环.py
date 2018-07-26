@@ -7,9 +7,10 @@ for i in range(6):
 print(a)
 
 #while循环
+
 b=0
 i=1
 while i<=5:
-    a+=i
-    i+1
+    b+=i
+    i=i+1
 print(b)
