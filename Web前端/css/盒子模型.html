@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 10px solid red;
+            padding:20px;
+            /*盒子实际大小=内容大小+左右边框+padding内边距*/
+
+            /*解决padding和边框改变盒子实际大小*/
+        }
+        /*在布局中，如果我想增大内容和边框的距离，又不想改变盒子显示的尺寸*/
+        /*box-sizing：content-box | border-box*/
+        .box2{
+            width: 200px;
+            height:200px;
+            background: #0000CC;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .box3{
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+</body>
+</html>

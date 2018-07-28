@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        /*浮动的特性*/
+
+        /*1、浮动元素有左浮动(float:left)和右浮动(float:right)两种*/
+
+        /*2、浮动的元素会向左或向右浮动，碰到父元素边界、浮动元素、未浮动的元素才停下来*/
+
+        /*3、相邻浮动的块元素可以并在一行，超出父级宽度就换行*/
+
+        /*4、浮动让行内元素或块元素自动转化为行内块元素*/
+
+        /*5、浮动元素后面没有浮动的元素会占据浮动元素的位置，没有浮动的元素内的文字会避开浮动的元素，形成文字饶图的效果*/
+
+        /*6、父元素内整体浮动的元素无法撑开父元素，需要清除浮动*/
+
+        /*7、浮动元素之间没有垂直margin的合并*/
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background: red;
+            /*浮动
+                左浮动：float：left
+                右浮动:float:right
+                1. 浮动会让元素脱离文档流，后面不浮动的会占据原来的位置
+                2. 停止浮动：
+                    a.碰到父级元素的边界会停止浮动
+                    b.碰到浮动元素
+                3.
+            */
+            /*float: left;*/
+            float: right;
+        }
+        .box2{
+            width:220px;
+            background: green;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+</body>
+</html>

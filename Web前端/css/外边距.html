@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css外边距</title>
+    <style>
+        /*margin相关技巧*/
+        /*1、设置元素水平居中： margin:x auto;*/
+        /*2、margin负值让元素位移及边框合并*/
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background:red;
+            /*设置外间距，让他距离box2 20px*/
+            /*用margin设置*/
+            margin-bottom: 20px;
+            margin:0 auto;
+        }
+        .box2{
+            background:blue;
+            margin-left:20px;
+        }
+    </style>
+</head>
+<body>
+<!--设置元素与周围元素的距离-->
+        <div class="box1"></div>
+        <div class="box2"></div>
+</body>
+</html>
