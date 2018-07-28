@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层级选择器</title>
+    <style>
+        /*层级选择器 通过父级元素来设置子集元素的样式*/
+        .warp{
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+        }
+        .warp  div{
+            width: 200px;
+            height: 100px;
+            background-color: green;
+        }
+        .warp .in{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+        <div class="warp">
+            <div class="in">
+                <div></div>
+            </div>
+            <div></div>
+        </div>
+</body>
+</html>
