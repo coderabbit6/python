@@ -1,6 +1,7 @@
 import requests
 
-def getHtmlText(url):
+
+def gethtmltext(url):
     try:
         r=requests.get(url, timeout=30)
         r.raise_for_status()

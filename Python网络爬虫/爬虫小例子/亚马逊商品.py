@@ -1,5 +1,6 @@
 import requests
 
+
 def getInfo(url):
     try:
         kv = {'user_agent': 'Mozilla/5.0'}
