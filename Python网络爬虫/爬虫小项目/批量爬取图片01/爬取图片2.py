@@ -55,6 +55,3 @@ if __name__ == '__main__':
         html = getHtmltext(fallurl)
         imglist = getimagelist(imglist, html)
         downlode(imglist, root, count)
-
-
-
