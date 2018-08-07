@@ -1,12 +1,12 @@
 import requests
 import time
-url = "http://img1.mm131.me/pic/2016/"
-root = "F://壁纸//爬取壁纸//mm131//"
+url = "http://fm.shiyunjj.com/2018/1260/2if1.jpg"
+root = "F://壁纸//爬取壁纸//mm131//1//"
 Hostreferer = {
     'User-Agent':'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)',
     'Referer': 'http://www.mm131.com'
                }
-for i in range(1, 30):
+for i in range(1, 50):
     # time.sleep(2)
     fullurl = url + str(i) + ".jpg"
     path = root + str(i) + ".jpg"
