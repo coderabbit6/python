@@ -11,7 +11,7 @@ def geturllist(url):
 	print("正在获取页面......")
 	try:
 		url_list = []
-		r = requests.get(url)
+		r = requests.get(url,headers = headers)
 		r.raise_for_status()
 		r.encoding = 'gbk'
 		soup = BeautifulSoup(r.text, 'html.parser')
@@ -44,7 +44,7 @@ def getpage(url_list,path):
 			d +=1
 			print("\r第{0}部正在下载......".format(d),end = ' ')
 			try:
-				r = requests.get(url)
+				r = requests.get(url,headers = headers)
 				r.raise_for_status()
 				r.encoding = 'gbk'
 				soup = BeautifulSoup(r.text,'html.parser')
@@ -58,7 +58,7 @@ def getpage(url_list,path):
 					count = count + 1
 					one_url = str(dd.a).split('"')[1]
 					try:
-						r = requests.get(url_base + one_url)
+						r = requests.get(url_base + one_url,headers = headers)
 						r.raise_for_status()
 						r.encoding = 'gbk'
 						soup = BeautifulSoup(r.text, 'html.parser')
@@ -71,6 +71,7 @@ def getpage(url_list,path):
 							with open(path, 'ab+') as f:
 								f.write((text + '\r\n').encode('utf-8'))
 								print("第{0}章{1}\t\t\t下载完成".format(count,title))
+								break
 						except Exception as e:
 							raise e
 					except Exception as e:
