@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style type="text/css">
+        #iteml{
+            width: 50px; 
+            height: 50px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+        <div id="iteml"></div>
+
+        <script>
+            
+            //获取元素对象
+            var oDiv=document.getElementById("iteml");
+            // oDiv.style.width="100px"
+            //启动多次定时器，让宽度逐渐变大
+            var i= 0;
+            var set=setInterval(function(){
+                i++;
+                oDiv.style.width=i+'px';
+                oDiv.style.height=i+'px';
+                if(i == 200)
+                    clearInterval(set)
+            },100);
+        </script>
+</body>
+</html>

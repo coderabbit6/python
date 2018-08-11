@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+</head>
+<body>
+
+        <script>
+            /*单次定时器  setTimeout(回调函数，时间)
+
+
+            循环定时器 setInterval(回调函数，时间)
+            间隔指定时间执行一次特定代码块
+
+            清除定时器：利用启动定时器后返回的标识符来清除
+            var set = setInterval()
+            setTimeout(f(){clearInterval(set)}) = 0
+            */
+
+            // setTimeout(function(){
+            //     console.log("第一次调用")
+            // },3000)   
+            
+
+            function deom(){
+                console.log("单次计时器")
+            }
+            setTimeout(deom,2000)
+
+
+
+
+
+
+
+
+        </script>
+</body>
+</html>
