@@ -63,3 +63,34 @@ while a <= 100:
 	print(a)
 	a++
 ```
+
+#### 用while循环来处理列表和字典
+- 在列表之间移动元素
+```
+a = [1,2,3,4,5]
+b = []
+while a:
+	b.append(a.pop())
+print(b)
+```
+
+- 删除包含特定值的所有列表元素
+```
+a = [1,2,3,4,5,63,3,3,4,5]
+while 3 in a:
+	a.remove(3)
+print(a)
+```
+- 使用用户输入来填充字典
+```
+a = {}
+flag = True
+while flag :
+	id = input("输入你的学号：")
+	name = input("请输入你的名字：")
+	a[id] = name
+	repeat = input(还有人吗？yes/no)
+	if repeat == 'no':
+		flag = False
+print(a)
+```
