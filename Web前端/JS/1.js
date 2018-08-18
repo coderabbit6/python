@@ -1,1 +1,5 @@
-alert('这是外部引用js')
+<script type = "text/javascript">
+	var button = document.getElementByID("btn");
+	setTimeout(function(){
+		button.click()
+	},3000)
