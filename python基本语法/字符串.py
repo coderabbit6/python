@@ -19,6 +19,10 @@ print(a + "1")
 #还可以剔除字符串开头的空白，或同时剔除字符串两端的空白。为此，可分别使用方法lstrip() 和strip() ：
 
 #引号可以嵌套表示
-b = 'you say"i am tom "'
-print(b)
-
+b = 'you say"i am tom"'
+print(b[-1])
+# for i in range(1,len(b)):
+# 	print(i,end = ' ')
+# 	print(b[-i],end = ' ')
+# print(b[1]) 
+print(b[::-1])
