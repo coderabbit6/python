@@ -1,6 +1,6 @@
 import requests
 import time
-url = "http://fm.shiyunjj.com/2018/1260/2if1.jpg"
+url = "http://www.mm131.com"
 root = "F://壁纸//爬取壁纸//mm131//1//"
 Hostreferer = {
     'User-Agent':'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)',

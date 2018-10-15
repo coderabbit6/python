@@ -4,7 +4,8 @@ from bs4 import BeautifulSoup
 
 
 # https://ws1.sinaimg.cn/large/6af89bc8gw1f8t0e12yv5j20ag081dg6.jpg
-url = "http://www.doutula.com/search?keyword=代码"
+k = input("请输入关键字：")
+url = "http://www.doutula.com/search?keyword="+k
 Hostreferer = {
     'User-Agent':'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)',
     # 'Referer': 'http://www.mm131.com'
