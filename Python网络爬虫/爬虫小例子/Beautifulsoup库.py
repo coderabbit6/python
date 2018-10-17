@@ -6,8 +6,12 @@ headers = {
 	"UserAgent":":'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
 
 }
-r = requests.get(url,headers = headers)
-print(r.status_code)
-soup = BeautifulSoup(r.text,"html.parser")
-print(len(soup.head.contents))
+# r = requests.get(url,headers = headers)
+# print(r.status_code)
+# soup = BeautifulSoup(r.text,"html.parser")
+# print(len(soup.head.contents))
 # help(requests)
+s = '<a download="" href="http://hddesktopwallpapers.in/wp-content/uploads/2015/09/cats-and-kittens-wallpapers1.jpg" title="Download Original Wallpaper Size"><button class="btn btn-success"><i class="fa fa-camera"></i> Original</button></a>, <a download="" href="http://hddesktopwallpapers.in/wp-content/uploads/2015/09/cat-yawning.jpg" title="Download Original Wallpaper Size"><button class="btn btn-success"><i class="fa fa-camera"></i> Original</button></a>'
+soup = BeautifulSoup(s,"html.parser")
+print(soup.a['href'])
+# print(soup)
